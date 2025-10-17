@@ -4,7 +4,9 @@ Welcome to the **Linear Algebra Foundations** repository! This comprehensive gui
 
 ## 📚 Contents
 
-This repository is organized into six core topics:
+This repository is organized into core topics with logical hierarchies:
+
+### Core Topics
 
 ### 1. [Vectors](./vectors/)
 - Represent data points, parameters, and embeddings
@@ -15,6 +17,11 @@ This repository is organized into six core topics:
 - Represent linear transformations, datasets, and neural network weight layers
 - Key operations: multiplication, inverse, transpose, determinant
 - ML applications: weight matrices in linear/fully connected layers
+  
+  **Subtopics:**
+  - **[Eigenvalues & Eigenvectors](./matrices/eigenvalues-eigenvectors/)**: Solve Av = λv; directions preserved under transformation
+  - **[Singular Value Decomposition (SVD)](./matrices/svd/)**: Factorization A = UΣVᵀ for low-rank approximation
+  - **[Spectral Methods & Decomposition](./matrices/spectral-methods/)**: Eigenstructure analysis for PCA, spectral clustering, GNNs
 
 ### 3. [Subspaces & Fundamental Theorem](./subspaces-fundamental-theorem/)
 - Understand the four fundamental subspaces: null space, column space, row space, left null space
@@ -22,20 +29,27 @@ This repository is organized into six core topics:
 - Key concepts: kernel, image, orthogonal complements, solvability
 - ML applications: feature redundancy, information loss in neural networks, dimensionality analysis
 
-### 4. [Eigenvalues & Eigenvectors](./eigenvalues-eigenvectors/)
-- Solve Av = λv
-- Interpret directions preserved under transformation with scaling factors
-- ML applications: PCA (dimensionality reduction), stability analysis, spectral graph theory
-
-### 5. [Singular Value Decomposition (SVD)](./svd/)
-- Factorization A = UΣVᵀ
-- Orthogonal directions and singular values (importance weights)
-- ML applications: low-rank approximation, model compression, latent factor models
-
-### 6. [Tensor Decompositions](./tensor-decompositions/)
+### 4. [Tensor Decompositions](./tensor-decompositions/)
 - Generalization of matrices to multi-dimensional arrays
 - Examples: CP decomposition, Tucker decomposition
 - ML applications: compressing deep networks, multi-modal data representation
+
+### Advanced Topics
+
+### 5. [Normed Spaces](./normed-spaces/)
+- Generalization of vector length with L1, L2, and Lp norms
+- Understanding norm geometry and properties
+- ML applications: Regularization (L1/Lasso, L2/Ridge), loss functions, distance metrics
+  
+  **Subtopics:**
+  - **[Hilbert Spaces](./normed-spaces/hilbert-spaces/)**: Complete inner product spaces with perfect geometry
+    - **[Kernel Methods & RKHS](./normed-spaces/hilbert-spaces/kernel-methods-rkhs/)**: SVMs, Gaussian Processes, Neural Tangent Kernel
+  - **[Banach Spaces](./normed-spaces/banach-spaces/)**: Complete normed spaces for optimization and neural operators
+
+### 6. [Linear Operators](./linear-operators/)
+- Maps between vector or function spaces
+- Bounded operators, adjoints, and special classes
+- ML applications: Convolution (CNNs), attention mechanisms (transformers), differential operators
 
 ## 🎯 Learning Path
 

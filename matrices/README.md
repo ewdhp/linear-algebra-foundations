@@ -2,7 +2,15 @@
 
 ## 📖 What You'll Learn
 
-Matrices are central to nearly every ML/AI algorithm. This section covers the essential matrix operations and concepts:
+Matrices are central to nearly every ML/AI algorithm. This section covers the essential matrix operations and concepts, along with advanced topics on their structure and decomposition.
+
+## 📂 Subtopics
+
+This section contains the following advanced topics:
+
+1. **[Eigenvalues & Eigenvectors](./eigenvalues-eigenvectors/)** - Understanding the spectrum and invariant directions
+2. **[Singular Value Decomposition (SVD)](./svd/)** - Optimal matrix factorization for many applications
+3. **[Spectral Methods & Decomposition](./spectral-methods/)** - Analyzing eigenstructure for stability and dimensionality
 
 ### Core Concepts
 
@@ -90,4 +98,13 @@ By the end of this section, you will be able to:
 
 ## 🚀 Next Steps
 
-After mastering matrices, you'll explore **Eigenvalues & Eigenvectors**, which reveal the intrinsic properties of linear transformations and enable powerful dimensionality reduction techniques.
+After mastering basic matrix operations, explore the advanced subtopics:
+- **[Eigenvalues & Eigenvectors](./eigenvalues-eigenvectors/)** - Intrinsic properties of matrices
+- **[SVD](./svd/)** - Optimal decomposition for dimensionality reduction
+- **[Spectral Methods](./spectral-methods/)** - PCA, clustering, and graph-based learning
+
+## 🔗 Related Topics
+
+- [Vectors](../vectors/) - Foundation for matrix operations
+- [Subspaces & Fundamental Theorem](../subspaces-fundamental-theorem/) - Understanding matrix structure
+- [Linear Operators](../linear-operators/) - Matrices as operators
