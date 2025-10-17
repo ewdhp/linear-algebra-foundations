@@ -4,7 +4,7 @@ Welcome to the **Linear Algebra Foundations** repository! This comprehensive gui
 
 ## 📚 Contents
 
-This repository is organized into five core topics:
+This repository is organized into six core topics:
 
 ### 1. [Vectors](./vectors/)
 - Represent data points, parameters, and embeddings
@@ -16,17 +16,23 @@ This repository is organized into five core topics:
 - Key operations: multiplication, inverse, transpose, determinant
 - ML applications: weight matrices in linear/fully connected layers
 
-### 3. [Eigenvalues & Eigenvectors](./eigenvalues-eigenvectors/)
+### 3. [Subspaces & Fundamental Theorem](./subspaces-fundamental-theorem/)
+- Understand the four fundamental subspaces: null space, column space, row space, left null space
+- Master the rank-nullity theorem: nullity + rank = dimension
+- Key concepts: kernel, image, orthogonal complements, solvability
+- ML applications: feature redundancy, information loss in neural networks, dimensionality analysis
+
+### 4. [Eigenvalues & Eigenvectors](./eigenvalues-eigenvectors/)
 - Solve Av = λv
 - Interpret directions preserved under transformation with scaling factors
 - ML applications: PCA (dimensionality reduction), stability analysis, spectral graph theory
 
-### 4. [Singular Value Decomposition (SVD)](./svd/)
+### 5. [Singular Value Decomposition (SVD)](./svd/)
 - Factorization A = UΣVᵀ
 - Orthogonal directions and singular values (importance weights)
 - ML applications: low-rank approximation, model compression, latent factor models
 
-### 5. [Tensor Decompositions](./tensor-decompositions/)
+### 6. [Tensor Decompositions](./tensor-decompositions/)
 - Generalization of matrices to multi-dimensional arrays
 - Examples: CP decomposition, Tucker decomposition
 - ML applications: compressing deep networks, multi-modal data representation
