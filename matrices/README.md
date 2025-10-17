@@ -2,7 +2,7 @@
 
 ## 📖 What You'll Learn
 
-Matrices are central to nearly every ML/AI algorithm. This section covers the essential matrix operations and concepts, along with advanced topics on their structure and decomposition.
+Matrices represent datasets, linear transformations, and weights in neural networks. They are central to nearly every ML/AI algorithm. This section covers the essential matrix operations and concepts, along with advanced topics on their structure and decomposition.
 
 ## 📂 Subtopics
 
@@ -45,19 +45,46 @@ This section contains the following advanced topics:
 
 ## 🤖 Machine Learning Applications
 
-### Neural Network Weight Matrices
-- **Linear/Fully Connected Layers**: Each layer represented as a matrix transformation
-- **Forward Propagation**: Sequential matrix multiplications
-- **Backpropagation**: Computing gradients through matrix operations
+### Weight Matrices in Fully Connected Layers
+- **Linear Transformations**: y = Wx + b
+- **Neural Network Layers**: Each layer as matrix multiplication
+- **Forward Propagation**: Sequential matrix multiplications through network
+- **Backpropagation**: Computing gradients via chain rule with matrices
 - **Parameter Initialization**: Xavier/He initialization strategies
+- **Weight Decay**: L2 regularization on weight matrices
+
+### Transformations in PCA and Linear Regression
+- **Principal Component Analysis (PCA)**:
+  - Covariance matrix eigendecomposition
+  - Dimensionality reduction via projection matrix
+  - Variance-preserving transformations
+- **Linear Regression**:
+  - Normal equations: (XᵀX)⁻¹Xᵀy
+  - Least squares solution via matrix operations
+  - Multiple features as matrix-vector multiplication
+- **Data Transformations**:
+  - Rotation, scaling, shearing matrices
+  - Affine transformations in computer vision
+
+### Covariance Matrices in Statistics and Gaussian Models
+- **Covariance Matrix**: Σ = (1/n)XᵀX (centered data)
+  - Measures feature relationships and correlations
+  - Positive semi-definite matrix
+  - Diagonal elements: variances; off-diagonal: covariances
+- **Multivariate Gaussian Distribution**:
+  - p(x) = N(μ, Σ) depends on covariance matrix
+  - Gaussian Discriminant Analysis (GDA)
+  - Gaussian Mixture Models (GMMs)
+- **Kalman Filters**: Covariance matrices for state estimation
+- **Gaussian Processes**: Kernel/covariance functions as matrices
 
 ### Other Key Applications
 - **Data Representation**: Dataset as matrix (rows = samples, columns = features)
-- **Covariance Matrices**: Understanding feature relationships
 - **Confusion Matrices**: Model performance evaluation
-- **Transformation Matrices**: Data preprocessing and augmentation
-- **Convolution as Matrix Operation**: Understanding CNNs
-- **Attention Weights**: Transformer architectures
+- **Gram Matrices**: Kernel methods and style transfer
+- **Convolution as Matrix Operation**: Toeplitz matrices in CNNs
+- **Attention Weights**: Query-Key-Value matrices in transformers
+- **Graph Adjacency Matrices**: Graph neural networks
 
 ## 📊 Topics Covered
 

@@ -2,7 +2,7 @@
 
 ## 📖 What You'll Learn
 
-Eigendecomposition is one of the most powerful tools in linear algebra with profound applications in ML/AI:
+Solve Av = λv to reveal principal directions and scaling factors. Eigendecomposition is one of the most powerful tools in linear algebra with profound applications in ML/AI:
 
 ### Core Concepts
 
@@ -35,23 +35,59 @@ Eigendecomposition is one of the most powerful tools in linear algebra with prof
 
 ## 🤖 Machine Learning Applications
 
-### Principal Component Analysis (PCA)
-- **Dimensionality Reduction**: Finding principal components as eigenvectors of covariance matrix
-- **Feature Extraction**: Selecting most important directions of variance
-- **Data Compression**: Reducing storage while preserving information
-- **Noise Reduction**: Filtering out low-variance components
-- **Visualization**: Projecting high-dimensional data to 2D/3D
+### PCA for Dimensionality Reduction
+- **Covariance Matrix Eigendecomposition**: C = QΛQᵀ
+  - Eigenvectors: Principal components (directions of maximum variance)
+  - Eigenvalues: Amount of variance explained by each component
+- **Dimensionality Reduction**: Project data onto top k eigenvectors
+  - Reduced representation: Z = XQₖ
+  - Variance retained: Σλᵢ (i≤k) / Σλⱼ (all j)
+- **Feature Extraction**: Transform correlated features to uncorrelated principal components
+- **Data Compression**: Store data in lower dimensions
+- **Noise Reduction**: Discard components with small eigenvalues
+- **Visualization**: Project high-dimensional data to 2D/3D
+- **Preprocessing**: Whitening data for neural networks
 
-### Stability of Dynamical Systems
-- **Recurrent Neural Networks**: Analyzing gradient flow and vanishing/exploding gradients
-- **Markov Chains**: PageRank algorithm (Google's original ranking)
-- **System Convergence**: Predicting long-term behavior
+### Spectral Clustering (Graph Laplacian)
+- **Graph Laplacian Matrix**: L = D - A
+  - D: degree matrix (diagonal)
+  - A: adjacency matrix
+  - Properties: Symmetric, positive semi-definite
+- **Eigenvalue 0**: Multiplicity = number of connected components
+- **Fiedler Vector**: Second smallest eigenvalue's eigenvector
+  - Reveals cluster structure
+  - Bisection of graph
+- **k-way Clustering**: Use k smallest eigenvalues' eigenvectors
+- **Applications**:
+  - Image segmentation
+  - Community detection in social networks
+  - Document clustering
+  - Graph partitioning
+- **Normalized Laplacian**: L_norm = I - D⁻¹/²AD⁻¹/²
 
-### Spectral Graph Theory
-- **Graph Neural Networks**: Spectral convolutions
-- **Community Detection**: Clustering using graph Laplacian eigenvectors
-- **Graph Embeddings**: Node representations from spectral properties
-- **Recommendation Systems**: Spectral clustering for collaborative filtering
+### Stability Analysis in Recurrent Neural Networks (RNNs)
+- **Gradient Flow**: Eigenvalues of weight matrices determine stability
+- **Vanishing Gradients**: |λ_max| < 1
+  - Gradients decay exponentially through time
+  - Long-term dependencies not learned
+- **Exploding Gradients**: |λ_max| > 1
+  - Gradients grow exponentially
+  - Training instability
+- **Critical Initialization**: Initialize with spectral radius ≈ 1
+- **Jacobian Analysis**: ∂h_t/∂h_{t-1} eigenvalues
+- **Long Short-Term Memory (LSTM)**: Designed to address eigenvalue problems
+- **Solutions**:
+  - Gradient clipping
+  - Orthogonal weight initialization
+  - Skip connections (ResNets)
+  - Spectral normalization
+
+### Other Key Applications
+- **Markov Chains & PageRank**: Dominant eigenvector of transition matrix
+- **Recommendation Systems**: Matrix factorization via eigendecomposition
+- **Quantum Mechanics**: Schrödinger equation solutions
+- **Vibration Analysis**: Natural frequencies as eigenvalues
+- **Control Theory**: System stability via eigenvalue placement
 
 ## 📊 Topics Covered
 

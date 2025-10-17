@@ -2,7 +2,7 @@
 
 ## 📖 What You'll Learn
 
-Vectors are fundamental building blocks in Machine Learning and AI. In this section, you'll master:
+Vectors represent data points, feature embeddings, and model parameters. They are fundamental building blocks in Machine Learning and AI. In this section, you'll master:
 
 ### Core Concepts
 
@@ -34,17 +34,33 @@ Vectors are fundamental building blocks in Machine Learning and AI. In this sect
 
 ## 🤖 Machine Learning Applications
 
-### Cosine Similarity for Embeddings
-- **Word Embeddings**: Measuring semantic similarity between words (Word2Vec, GloVe)
+### Word Embeddings (Word2Vec, GloVe)
+- **Semantic Representation**: Words mapped to dense vectors capturing meaning
+- **Word2Vec**: Skip-gram and CBOW architectures
+- **GloVe**: Global vectors for word representation
+- **Vector Arithmetic**: "king - man + woman ≈ queen"
+- **Transfer Learning**: Pre-trained embeddings for downstream tasks
+
+### Similarity Measures (Cosine Similarity)
+- **Cosine Similarity**: cos(θ) = (u·v)/(‖u‖‖v‖)
 - **Document Similarity**: Comparing text documents using TF-IDF vectors
-- **Recommendation Systems**: Finding similar items or users
-- **Image Recognition**: Comparing feature vectors
+- **Recommendation Systems**: Finding similar items or users based on embeddings
+- **Image Recognition**: Comparing feature vectors from CNNs
+- **Nearest Neighbor Search**: Finding similar data points
+
+### Feature Scaling and Normalization
+- **Min-Max Scaling**: Rescaling features to [0,1] range
+- **Standardization (Z-score)**: Zero mean and unit variance
+- **L2 Normalization**: Unit vector scaling ‖x‖₂ = 1
+- **Batch Normalization**: Normalizing layer inputs in neural networks
+- **Why It Matters**: Ensures features contribute equally, improves convergence
 
 ### Other Key Applications
 - **Feature Vectors**: Representing data samples in ML models
 - **Gradient Vectors**: Optimization direction in gradient descent
 - **Weight Vectors**: Parameters in linear models
 - **Attention Mechanisms**: Query, key, and value vectors in transformers
+- **Residual Connections**: Vector addition in ResNets
 
 ## 📊 Topics Covered
 

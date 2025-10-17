@@ -9,17 +9,26 @@ This repository is organized into core topics with logical hierarchies:
 ### Core Topics
 
 ### 1. [Vectors](./vectors/)
-- Represent data points, parameters, and embeddings
-- Key concepts: dot product, norm, projection, orthogonality
-- ML applications: cosine similarity for embeddings (e.g., word vectors)
+**Represent data points, feature embeddings, and model parameters.**
+- **Operations**: dot product, norm, projection, orthogonality
+- **ML Applications**:
+  - Word embeddings (Word2Vec, GloVe)
+  - Similarity measures (cosine similarity)
+  - Feature scaling and normalization
 
 ### 2. [Matrices](./matrices/)
-- Represent linear transformations, datasets, and neural network weight layers
-- Key operations: multiplication, inverse, transpose, determinant
-- ML applications: weight matrices in linear/fully connected layers
+**Represent datasets, linear transformations, and weights.**
+- **Operations**: multiplication, transpose, inverse, determinant
+- **ML Applications**:
+  - Weight matrices in fully connected layers
+  - Transformations in PCA and linear regression
+  - Covariance matrices in statistics and Gaussian models
   
   **Subtopics:**
-  - **[Eigenvalues & Eigenvectors](./matrices/eigenvalues-eigenvectors/)**: Solve Av = λv; directions preserved under transformation
+  - **[Eigenvalues & Eigenvectors](./matrices/eigenvalues-eigenvectors/)**: Solve Av = λv, revealing principal directions
+    - PCA for dimensionality reduction
+    - Spectral clustering (graph Laplacian)
+    - Stability analysis in recurrent neural networks (RNNs)
   - **[Singular Value Decomposition (SVD)](./matrices/svd/)**: Factorization A = UΣVᵀ for low-rank approximation
   - **[Spectral Methods & Decomposition](./matrices/spectral-methods/)**: Eigenstructure analysis for PCA, spectral clustering, GNNs
 
