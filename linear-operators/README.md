@@ -2,7 +2,7 @@
 
 ## 📖 What You'll Learn
 
-Linear operators are mappings between vector spaces or function spaces that preserve the linear structure. They are fundamental to understanding transformations in machine learning, from simple matrix operations to complex differential operators in physics-informed ML and attention mechanisms in transformers.
+Linear operators are mappings between vector spaces , function spaces that preserve the linear structure. They are fundamental to understanding transformations in machine learning, from simple matrix operations to complex differential operators in physics-informed ML and attention mechanisms in transformers.
 
 ### Core Concepts
 
