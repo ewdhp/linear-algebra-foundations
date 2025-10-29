@@ -3,6 +3,9 @@ numpy>=2.3.4
 scipy>=1.16.2
 matplotlib>=3.10.7
 
+# GUI backend for matplotlib
+PyQt5>=5.15.0
+
 # Symbolic mathematics
 sympy>=1.14.0
 
