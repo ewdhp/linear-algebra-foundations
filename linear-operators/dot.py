@@ -15,7 +15,17 @@ through four comprehensive subplots:
    Key Concepts:
    - Projection formula: proj_B(A) = (A·B̂)B̂ where B̂ = B/|B| is the unit vector
    - Dot product properties: commutative (A·B = B·A), distributive, and linear
-   - Applications: Work in physics (W = F·d), cosine similarity in ML
+   - Applications:
+     * Physics - Work: W = F·d represents cosine similarity between force and displacement
+       (only the component of force in the direction of motion does work)
+     * Physics - Power: P = F·v (force dot velocity) measures instantaneous power transfer
+     * Physics - Flux: Φ = E·A calculates electric/magnetic flux through a surface
+     * Machine Learning - Cosine Similarity: measures document/feature similarity in NLP
+     * Machine Learning - Attention Mechanisms: query·key operations in transformers
+     * Computer Graphics - Lighting: N·L (normal dot light) for diffuse shading (Lambertian)
+     * Signal Processing - Correlation: measures similarity between signals or templates
+     * Linear Algebra - Orthogonality Testing: A·B = 0 determines perpendicularity
+     * Optimization - Gradient Alignment: ∇f·d tests if direction d increases function f
 
 2. VECTOR ADDITION AND SUBTRACTION
    Theory: Vector addition follows the parallelogram law (or triangle rule). The sum
